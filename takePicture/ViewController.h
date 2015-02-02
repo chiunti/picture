@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<UIImagePickerControllerDelegate>
+{
+ UIImagePickerController *imagePicker;
+ IBOutlet UIImageView *imageView;
+}
+- (IBAction)btnPressed:(id)sender;
 
 @end
 
